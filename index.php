@@ -69,6 +69,17 @@ if (!$link) {
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        
+        <style>
+
+        .slider_inner {
+            padding: 25rem; /* Adjust this value according to the navbar height */
+        }
+
+        </style>
+
+
     </head>
     <body>
         <!--==========Main Header==========-->
@@ -142,7 +153,7 @@ if (!$link) {
                 <h2>Product List</h2>
             </div>
             <div class="row it_works">
-                
+
                 <?php
                     // Use the same $link connection to fetch data
                     $res = mysqli_query($link, "SELECT * FROM products;");
