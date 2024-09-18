@@ -29,13 +29,12 @@ $dbUser = getenv('DB_USER');
 $dbPassword = getenv('DB_PASSWORD');
 $dbName = getenv('DB_NAME');
 
-// You can now use these variables to connect to the database
-// For example:
-$conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
+// Attempt to connect to the database using mysqli_connect()
+$link = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$link) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
 
@@ -143,20 +142,11 @@ if ($conn->connect_error) {
                 <h2>Product List</h2>
             </div>
             <div class="row it_works">
-              <?php
-
-                        // $link = mysqli_connect('172.20.1.101', 'ecomuser', 'ecompassword', 'ecomdb');
-                        // Fetch database connection details directly from environment variables
-                        $dbHost = getenv('DB_HOST');
-                        $dbUser = getenv('DB_USER');
-                        $dbPassword = getenv('DB_PASSWORD');
-                        $dbName = getenv('DB_NAME');
-
-                        // Attempt to connect to the database
-                        $link = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
-
-                        if ($link) {
-                        $res = mysqli_query($link, "select * from products;");
+                
+                <?php
+                    // Use the same $link connection to fetch data
+                    $res = mysqli_query($link, "SELECT * FROM products;");
+                    if ($res) {
                         while ($row = mysqli_fetch_assoc($res)) { ?>
 
                 <div class="col-md-3 col-sm-6 business_content">
