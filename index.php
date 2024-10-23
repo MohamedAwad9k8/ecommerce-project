@@ -45,7 +45,7 @@ if (!$link) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Kodekloud E-Commerce</title>
+        <title>Cloudly E-Commerce</title>
 
         <!-- Favicon -->
         <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -61,6 +61,18 @@ if (!$link) {
 
         <!-- Theme style CSS -->
         <link href="css/style.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
+            rel="stylesheet"
+        />
 <!--        <link href="css/responsive.css" rel="stylesheet">  -->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -105,9 +117,8 @@ if (!$link) {
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html">
-                                <img src="img/logo.png" alt="">
-                                <img src="img/logo-2.png" alt="">
+                            <a class="navbar-brand" href="#">
+                                Cloudly
                             </a>
                         </div>
                     </div>
@@ -140,9 +151,9 @@ if (!$link) {
         <section class="slider_area row m0">
             <div class="slider_inner">
                 <div class="camera_caption">
-                    <h2 class="wow fadeInUp animated">Make Your Shopping Easy</h2>
-                    <h5 class="wow fadeIn animated" data-wow-delay="0.3s">Find everything accordingly</h5>
-                    <a class="learn_mor wow fadeInU" data-wow-delay="0.6s" href="#product-list">Show Now!</a>
+                    <h2 class="wow fadeInUp animated">Shopping Made Easy For You!!</h2>
+                    <h5 class="wow fadeIn animated" data-wow-delay="0.3s">Everything You Need In One Place!</h5>
+                    <a class="learn_mor wow fadeInU" data-wow-delay="0.6s" href="#product-list">Shop Now!</a>
                 </div>
             </div>
         </section>
@@ -204,7 +215,7 @@ if (!$link) {
 
 
                 <div class="copy_right_area">
-                    <h4 class="copy_right">© Copyright 2019 Kodekloud Ecommerce | All Rights Reserved</h4>
+                    <h4 class="copy_right">© Copyright Cloudly Ecommerce | All Rights Reserved</h4>
                 </div>
             </div>
         </footer>

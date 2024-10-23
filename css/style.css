@@ -132,7 +132,7 @@ ul {
   position: absolute;
   width: 160px;
   height: 6px;
-  background: #c4a075;
+  background-color: #1565C0;
   left: 50%;
   transform: translateX(-50%);
   bottom: -35px;
@@ -144,7 +144,7 @@ ul {
 /* Main Menu css
 ============================================================================================ */
 .navbar.navbar-default {
-  background: transparent;
+  background-color: rgba(5, 5, 5, 0.6);
   border: none;
   width: 100%;
   margin: 0;
@@ -179,7 +179,19 @@ ul {
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 .navbar.navbar-default .navbar-header .navbar-brand {
-  padding-top: 35px;
+  margin-top: 30px;          /* Adjusts the vertical position */
+  font-size: 32px;          /* Font size */
+  color: #fff;              /* Font color */
+  font-weight: bold;        /* Makes the text bold */
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; /* Transforms text to uppercase */
+  letter-spacing: 1px;      /* Adds spacing between letters */
+  transition: color 0.3s;   /* Smooth transition for color change */
+}
+
+.navbar.navbar-default .navbar-header .navbar-brand:hover {
+  color: #1565C0;           /* Changes color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow effect */
 }
 .navbar.navbar-default .navbar-header .navbar-brand img {
   max-width: 100%;
@@ -207,7 +219,7 @@ ul {
   color: #fff;
 }
 .navbar.navbar-default .main_nav li a:hover, .navbar.navbar-default .main_nav li a:focus {
-  color: #c4a075;
+  color: #1565C0;
 }
 .navbar.navbar-default .main_nav li:first-child a {
   padding-left: 0px;
@@ -224,7 +236,7 @@ ul {
   color: #fff;
 }
 .navbar.navbar-default .navbar-nav.navbar-right li a:hover, .navbar.navbar-default .navbar-nav.navbar-right li a:focus {
-  color: #c4a075;
+  color: #1565C0;
 }
 .navbar.navbar-default .navbar-nav.navbar-right li a i {
   font-size: 18px;
@@ -275,6 +287,7 @@ ul {
   background-size: cover;
 }
 .slider_area .slider_inner {
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   height: 50vh;
 }
@@ -304,7 +317,7 @@ ul {
   width: 250px;
   text-align: center;
   border-radius: 30px;
-  background: #c4a075;
+  background-color: #1565C0;
   display: block;
   margin: 0 auto;
 }
@@ -443,7 +456,7 @@ ul {
   width: 220px;
   text-align: center;
   border-radius: 30px;
-  background: #c4a075;
+  background: #1565C0;
   display: inline-block;
   margin: 0 auto;
 }
@@ -453,7 +466,7 @@ ul {
 }
 
 .apply_now_tow {
-  background: #c4a075;
+  background: #1565C0;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 65px;
@@ -508,8 +521,8 @@ ul {
   margin-right: 7px;
 }
 .european_passport .learn_mor:hover, .european_passport .learn_mor:focus, .european_passport .learn_mor.active {
-  background: #c4a075;
-  border-color: #c4a075;
+  background: #1565C0;
+  border-color: #1565C0;
 }
 
 /* ----------------------------- */
@@ -553,7 +566,7 @@ ul {
 }
 .best_business_area .it_works .business_content .media .media-left h2 {
   font: 700 72px "Fira Sans", sans-serif;
-  color: #c4a075;
+  color: #1565C0;
 }
 .best_business_area .it_works .business_content .media .media-body {
   padding-top: 15px;
@@ -574,7 +587,7 @@ ul {
   font: 500 18px "Fira Sans", sans-serif;
 }
 .best_business_area .it_works .business_content .media:hover .media-body a, .best_business_area .it_works .business_content .media:focus .media-body a {
-  color: #c4a075;
+  color: #1565C0;
 }
 
 .error-content {
@@ -583,7 +596,7 @@ ul {
 }
 
 .error-content h1 {
-  style="color: red"
+  color: red"
 }
 
 
@@ -642,7 +655,7 @@ ul {
   font: 600 italic 18px/30px "Muli", sans-serif;
   text-decoration: underline;
   padding-top: 20px;
-  color: #c4a075;
+  color: #1565C0;
 }
 .clients_testimonials_area .other_testimonial_area .owl-controls {
   text-align: center;
@@ -662,7 +675,7 @@ ul {
   transition: all 300ms linear 0s;
 }
 .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-prev:hover h5, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-prev:hover i, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-prev:focus h5, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-prev:focus i {
-  color: #c4a075;
+  color: #1565C0;
 }
 .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-prev i {
   padding-right: 15px;
@@ -674,7 +687,7 @@ ul {
   display: inline-block;
 }
 .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-next:hover h5, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-next:hover i, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-next:focus h5, .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-next:focus i {
-  color: #c4a075;
+  color: #1565C0;
 }
 .clients_testimonials_area .other_testimonial_area .owl-controls .owl-nav .owl-next i {
   padding-left: 15px;
@@ -709,7 +722,7 @@ ul {
   font-size: 60px;
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
-  color: #c4a075;
+  color: #1565C0;
   margin-top: -6px;
   line-height: 1;
   display: inline-block;
@@ -785,7 +798,7 @@ ul {
 .footer_area .subscribe_area .news_letter .form-group button {
   font: 600 18px/50px "Fira Sans", sans-serif;
   color: #fff;
-  background: #c4a075;
+  background: #1565C0;
   text-align: center;
   padding: 0;
   border: 0;
@@ -843,7 +856,7 @@ ul {
 .footer_area .footer_from_area .from_main .form-group button {
   font: 600 16px/60px "Fira Sans", sans-serif;
   color: #fff;
-  background: #c4a075;
+  background-color: #1565C0;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
